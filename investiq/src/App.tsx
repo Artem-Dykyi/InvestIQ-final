@@ -3,12 +3,14 @@ import { useState } from 'react'
 // import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
 import './App.css'
-import { RegistrationPage } from './pages/RegistrationPage/RegistrationPage'
+// import { RegistrationPage } from './pages/RegistrationPage/RegistrationPage'
+import { CostPage } from './pages/CostPage/CostPage'
 
 function App() {
 
   return (<>
-    <RegistrationPage/>
+    {/* <RegistrationPage/> */}
+    <CostPage/>
   </>)
 }
 

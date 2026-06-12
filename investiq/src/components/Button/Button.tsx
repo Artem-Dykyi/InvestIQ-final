@@ -1,8 +1,10 @@
 import React from "react"
 import s from "./Button.module.scss"
 
+
 interface ButtonProps{
-    children: React.ReactNode;
+    text: string;
+    icon?: React.ReactNode;
     bgColor?: "gray" | "orange";
     textColor?: "black" | "white";
     className?: string;
@@ -10,18 +12,20 @@ interface ButtonProps{
 }
 
 export const Button=({
-    children,
+    text,
+    icon,
     bgColor ="orange",
     textColor = "white", 
     onClick,
     className =""
 }: ButtonProps) =>{
 
-    const btnClass = `${s.btn} ${s[`btn--bg-${bgColor}`]} ${s[`btn--text-${textColor}`]} ${className}`.trim();
+    const btnClass = `${s.btn} ${s[`btn__bg_${bgColor}`]} ${s[`btn__text_${textColor}`]} ${className}`.trim();
 
     return(
         <button onClick={onClick} className={btnClass}>
-            {children}
+            {icon && icon}        
+            <span>{text}</span>
         </button>
     )
 }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &__label{
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        color: #000;
+        font-family: 'Roboto';
+        margin-left: 86px;
+        padding-bottom: 10px;
+    }
+
+    &__input{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        color: #a6abb9;
+        padding: 17px 0px 17px 20px;
+        margin-left: 86px;
+        margin-right: 85px;
+        border-radius: 30px;
+        border: none;
+    }
+}

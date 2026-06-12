@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.reg_main_box{
+    display: flex;
+}
+
+.invest{
+    &__title{
+        font-weight: 900;
+        font-size: 102px;
+        color: #000;
+        font-family: 'Roboto';
+        padding-left: 120px;
+        margin: 0;
+        margin-top: 293px;
+        width: 385px;
+    }
+
+    &__text{
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #52555f;
+        font-family: 'Roboto';
+        padding-left: 192px;
+    
+    }
+}
+
+
+.frm{
+    background-color: aqua;
+    width: 436px;//убрат 
+    border-radius: 30px;
+    box-shadow: 0 10px 60px 0 rgba(170, 178, 197, 0.2);
+    //background: #fff;
+    margin-top: 117px;
+    margin-left: 119px;
+    margin-bottom: 142px;
+
+    &__text_you{
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        color: #52555f;
+        font-family: 'Roboto';
+        width: 265px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    &__btn_google{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 26px !important;
+    }
+
+    &__text_or{
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        color: #52555f;
+        width: 265px;
+        font-family: 'Roboto';
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    &__btn_box{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding-bottom: 53px;
+    }
+
+}

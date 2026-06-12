@@ -1,3 +1,4 @@
+import c from "../../utilits/Container.module.scss"
 import s from "./RegistrationPage.module.scss"
 import { Button } from "../../components/Button/Button"
 import { Input } from "../../components/Input/Input"
@@ -5,7 +6,7 @@ import { Input } from "../../components/Input/Input"
 export const RegistrationPage = ()=>{
     return(<>
         <section className={s.reg_section}>
-            <div className={s.container}>
+            <div className={c.container}>
                 <div className={s.reg_main_box}>
                     <div className={s.invest}>
                         <h2 className={s.invest__title}>InvestIQ</h2>
@@ -14,10 +15,12 @@ export const RegistrationPage = ()=>{
                     <div className={s.frm}>
                         <p className={s.frm__text_you}>Ви можете авторизуватися за допомогою акаунта Google</p>
                         <Button
-                            children="Google"
+                            text="Google"
+                            bgColor="gray"
+                            textColor="black"
                             className={s.frm__btn_google}
-                            onClick={()=>{}}
-                            >
+                            onClick={()=>console.log("Google Login")}
+                            icon={
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_2748)">
                                 <path d="M17.4354 7.33402C17.5135 7.33402 17.5768 7.39888 17.5768 7.47889V9C17.5768 9.56932 17.5252 10.126 17.4262 10.666C16.66 14.8604 13.0517 18.0303 8.72663 17.9998C3.87356 17.9655 -0.0103565 13.9498 0.000388452 8.97972C0.0110648 4.01857 3.94167 0 8.78859 0C11.1632 0 13.3178 0.964758 14.8996 2.53188C14.9568 2.58845 14.9582 2.68168 14.902 2.7392L12.8007 4.89115C12.7466 4.94656 12.6592 4.948 12.6038 4.89396C11.611 3.92614 10.2677 3.33197 8.78859 3.33197C5.7343 3.33197 3.2748 5.83284 3.25406 8.96066C3.23322 12.109 5.7192 14.668 8.78859 14.668C11.279 14.668 13.3854 12.9832 14.0799 10.666H8.93006C8.85193 10.666 8.78859 10.6011 8.78859 10.5211V7.47886C8.78859 7.39884 8.85193 7.33398 8.93006 7.33398H17.4354V7.33402Z" fill="#2196F3" />
@@ -37,8 +40,8 @@ export const RegistrationPage = ()=>{
                                 </clipPath>
                             </defs>
                             </svg>
-                        </Button>
-                        <button className={s.frm__btn_google}></button>
+                            }
+                        />
                         <p className={s.frm__text_or}>Або увійти за допомогою ел. пошти та праолю після реєстрації</p>
                         <form action="" className={s.frm__form}>
                             <Input
@@ -59,16 +62,18 @@ export const RegistrationPage = ()=>{
                             />
                             <div className={s.frm__btn_box}>
                                 <Button
-                                    children="увійти"
+                                    text="увійти"
                                     onClick={()=>{}}
                                     className={s.frm__btn_login}
-                                    />
+                                />
+
                                 <Button
-                                    children="реєстрація"
+                                    text="реєстрація"
                                     bgColor="gray"
                                     textColor="black"
                                     onClick={()=>{}}
-                                    className={s.frm__btn_regist}/>
+                                    className={s.frm__btn_regist}
+                                />
                             </div>
                         </form>
                     </div>
